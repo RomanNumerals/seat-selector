@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Retro Reel Cinema</title>
+  </head>
+  <body>
+    <div class="movie-container">
+      <label>Select a Movie:</label>
+      <select id="movie">
+        <option value="15">Pineapple Express ($15)</option>
+        <option value="8">Moana ($8)</option>
+        <option value="20">50 Shades darker ($20)</option>
+        <option value="11">IP Man ($11)</option>
+        <option value="14">Scott Pilgram vs. The World ($14)</option>
+        <option value="45">Daytona500 ($45)</option>
+        <option value="5">The Rugrats Movie ($5)</option>
+        <option value="75">UFC 247 ($75)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <div class="seat"></div>
+      <small>Available</small>
+    </ul>
+    <ul class="showcase">
+      <div class="seat selected"></div>
+      <small>Selected</small>
+    </ul>
+    <ul class="showcase">
+      <div class="seat sold"></div>
+      <small>Sold</small>
+    </ul>
+    <ul class="showcase">
+      <div class="seat"></div>
+      <small>Wheelchair</small>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      You have purchased <span id="count">0</span> seat(s) for a total price of
+      $<span id="total">0</span>.
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -6,9 +6,22 @@ const movieOption = document.getElementById('movie');
 
 let ticketPrice = +movieOption.value;
 
+// Store selected movie index and associated price
+function setMovieData(movieIndex, ticketPrice) {
+  localStorage.setitem('selectedMovieIndex', movieIndex);
+  localStorage.setItem('selectedMoviePrice', ticketPrice);
+}
+
 // Updates total seat count and total price
 function updateSelectedSeatCountAndPrice() {
   const selectedSeats = document.querySelectorAll('.row .seat.selected');
+
+  /* spread operator to copy selected seats into array, go through array and return new array indexes */
+  const seatsIndex = [...selectedSeats].map(function(seat) {
+    return [...seats].indexOf(seat);
+  });
+
+  localStorage.setItem('selectedSeats', JSON.stringify(seatsIndex));
 
   const selectedSeatsCount = selectedSeats.length;
 

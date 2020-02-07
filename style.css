@@ -51,7 +51,7 @@ body {
   background-color: #35a0a8;
 }
 
-.seat.sold {
+.seat.occupied {
   background-color: #e60517;
 }
 
